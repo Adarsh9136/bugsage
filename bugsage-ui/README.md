@@ -15,3 +15,4 @@ Frontend interface of **BugSage** – an AI-powered debugging assistant for deve
 ```bash
 cd bugsage-ui
 npm install
+npm start
