@@ -1,0 +1,26 @@
+
+---
+
+## 📁 bugsage-api (Backend)
+
+### ✅ `.gitignore`
+Place this inside `bugsage-api/.gitignore`:
+
+```gitignore
+# compiled files
+__pycache__/
+*.py[cod]
+
+# environment
+.env
+venv/
+*.env
+
+# editor
+.vscode/
+.idea/
+
+# logs
+*.log
+
+
