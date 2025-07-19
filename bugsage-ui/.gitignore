@@ -1,0 +1,9 @@
+# Ignore unnecessary files
+*.log
+node_modules/
+.venv/
+.env
+__pycache__/
+bugsage-ui/build/
+bugsage-ui/.next/
+bugsage-ui/.git  # prevent re-adding .git inside
