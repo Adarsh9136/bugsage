@@ -1,3 +1,4 @@
+#phase 1 llm_chain
 import os
 import openai
 from dotenv import load_dotenv

@@ -3,6 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from schemas import BugResponse
 from llm_chain import explain_bug
+from llm_chain1 import explain_bug2
 
 app = FastAPI()
 
@@ -30,7 +31,7 @@ def get_bug_explanation(request: BugRequest):
         raise HTTPException(status_code=400, detail="Log input cannot be empty.")
 
     try:
-        explanation = explain_bug(request.log, lang=request.lang)
+        explanation = explain_bug2(request.log, lang=request.lang)
         print("[INFO] Successfully generated explanation")
         return BugResponse(explanation=explanation)
     except Exception as e:

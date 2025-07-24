@@ -92,7 +92,7 @@ function App() {
                     <>
                       <div className="bg-blue-100 dark:bg-blue-800 text-gray-800 dark:text-white px-4 py-2 rounded-lg text-right">
                         <p className="text-sm font-semibold text-right">You</p>
-                        <p className='text-left'>{msg.content}</p>
+                        <p className='text-left' dangerouslySetInnerHTML={{ __html: msg.content.replace(/\n/g, '<br/>') }} />
                       </div>
                       <img
                         src="https://i.pravatar.cc/40?u=user"
@@ -105,7 +105,7 @@ function App() {
                       <div className="text-2xl mt-1">🪲</div>
                       <div className="bg-green-100 dark:bg-green-700 text-gray-800 dark:text-white px-4 py-2 rounded-lg">
                         <p className="text-sm font-semibold text-left">BugSage AI</p>
-                        <p className='text-left'>{msg.content}</p>
+                        <p className='text-left' dangerouslySetInnerHTML={{ __html: msg.content.replace(/\n/g, '<br/>') }} />
                       </div>
                     </>
                   )}
